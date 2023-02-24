@@ -10,5 +10,34 @@ function writePassword() {
 
 }
 
+// Criteria functions
+
+let minLetter = 1;
+let maxLetter = 27;
+
+// uppercase generation
+function genUpper() {
+  return String.fromCharCode(Math.floor(Math.random() * (maxLetter - minLetter) + minLetter + 64));
+}
+
+console.log(genUpper())
+
+
+// lower
+
+function genLower() {
+
+}
+
+// number
+function genNumber() {
+
+}
+
+// special
+function genSpecial() {
+
+}
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
