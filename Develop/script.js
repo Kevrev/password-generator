@@ -12,32 +12,42 @@ function writePassword() {
 
 // Criteria functions
 
-let minLetter = 1;
-let maxLetter = 27;
+const minLetter = 1;
+const maxLetter = 27;
+const numbersList = "0123456789";
+const symbolsList = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
-// uppercase generation
+// Uppercase generation
+// Uppercase Character codes from 65 - 90
 function genUpper() {
   return String.fromCharCode(Math.floor(Math.random() * (maxLetter - minLetter) + minLetter + 64));
 }
 
 console.log(genUpper())
 
-
-// lower
-
+// Lowercase generation
+// Lowercase Character codes from 97 - 122
 function genLower() {
-
+  return String.fromCharCode(Math.floor(Math.random() * (maxLetter - minLetter) + minLetter + 96));
 }
 
-// number
+console.log(genLower())
+
+// Number generation
+// Codes or random index of numbersList works here
 function genNumber() {
-
+  return numbersList[Math.floor(Math.random() * numbersList.length)];
 }
 
-// special
+console.log(genNumber())
+
+// symbols generation
+// Random index of symbolsList is better here since charset codes are spread out all over
 function genSpecial() {
-
+  return symbolsList[Math.floor(Math.random() * symbolsList.length)];
 }
+
+console.log(genSpecial())
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
