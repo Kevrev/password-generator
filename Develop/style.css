@@ -88,6 +88,17 @@ header {
   cursor: pointer;
 }
 
+.checkboxform{
+  display: none;
+}
+.container {
+  display: block;
+  padding-bottom: 8px;
+  text-align: center;
+  font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+
 button[disabled] {
   cursor: default;
   background: #c0c7cf;
