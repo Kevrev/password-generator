@@ -92,10 +92,21 @@ header {
   display: none;
 }
 .container {
-  display: block;
-  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 255px;
+  margin-right: 255px;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  font-family:'Trebuchet MS', Arial, sans-serif;
+}
+
+.selection {
+  margin-bottom: 7px;
   text-align: center;
   font-family:'Trebuchet MS', Arial, sans-serif;
+  font-weight: bold;
 }
 
 

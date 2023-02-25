@@ -54,6 +54,6 @@ function genSpecial() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", function() {
-  checkboxForm.style.display = "block";
+  checkboxForm.style.display = "inline";
 });
 generateBtn.addEventListener("click", writePassword);

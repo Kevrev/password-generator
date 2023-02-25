@@ -24,24 +24,29 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <form class="checkboxform">
-          <label class="container">Uppercase
-            <input type="checkbox" id="uppercase">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Lowercase
+        <div class="checkboxform">
+          <p class="selection">Select from the options below:</p>
+          <div class="container">
+            <label>Length</label>
+            <input type="number" id="passlength" min="8" max="128" value="8">
+          </div>
+          <div class="container">
+            <label>Lowercase</label>
             <input type="checkbox" id="lowercase">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Numbers
+          </div>
+          <div class="container">
+            <label>Uppercase</label>
+            <input type="checkbox" id="uppercase">
+          </div>
+          <div class="container">
+            <label>Numbers</label>
             <input type="checkbox" id="numbers">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Symbols
+          </div>
+          <div class="container">
+            <label>Symbols</label>
             <input type="checkbox" id="symbols">
-            <span class="checkmark"></span>
-          </label>
-        </form>
+          </div>
+        </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
