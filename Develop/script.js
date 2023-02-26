@@ -49,13 +49,36 @@ function genSpecial() {
 
 // Add event listener to generate button
 // Creates parameters menu, generates and writes password after selection and second press
+// generateBtn.addEventListener("click", function() {
+//   parametersMenu();
+  
+//   const upperTrue = "1";
+//   const lowerTrue = "2";
+//   const numbersTrue = "3";
+//   const symbolsTrue = "4";
+//   const generatedPass = generatePass(upperTrue, lowerTrue, numbersTrue, symbolsTrue); 
+//   function writePass() { 
+//     var password = generatedPass;
+//     var passwordText = document.querySelector("#password");
+  
+//     passwordText.value = String(password);
+//   }
+//   writePass();
+// });
+
+// function generatePass(a, b, c, d) {
+//   return a + b + c + d;
+// }
+
+
+
+
 generateBtn.addEventListener("click", function() {
   parametersMenu();
-  
-  const upperTrue = "1";
-  const lowerTrue = "2";
-  const numbersTrue = "3";
-  const symbolsTrue = "4";
+  const upperTrue = uppercaseEl.checked;
+  const lowerTrue = lowercaseEl.checked;
+  const numbersTrue = numbersEl.checked;
+  const symbolsTrue = symbolsEl.checked;
   const generatedPass = generatePass(upperTrue, lowerTrue, numbersTrue, symbolsTrue); 
   function writePass() { 
     var password = generatedPass;
@@ -64,11 +87,11 @@ generateBtn.addEventListener("click", function() {
     passwordText.value = String(password);
   }
   writePass();
+  console.log(upperTrue)
 });
 
 function generatePass(a, b, c, d) {
   return a + b + c + d;
 }
-
 
 
