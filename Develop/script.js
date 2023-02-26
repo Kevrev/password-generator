@@ -2,10 +2,30 @@
 var generateBtn = document.querySelector("#generate");
 var checkboxForm = document.querySelector(".checkboxform")
 
+const lowercaseEl = document.querySelector("#lowercase");
+const uppercaseEl = document.querySelector("#uppercase");
+const numbersEl = document.querySelector("#numbers");
+const symbolsEl = document.querySelector("#symbols");
+const generateEl = document.querySelector("#generate");
+
+// Random Generation for the Potential Parameters
+const minLetter = 1;
+const maxLetter = 27;
+const numbersList = "0123456789";
+const symbolsList = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+
+// Reveals the parameters upon first click of generate password
+function parametersMenu() {
+  checkboxForm.style.display = "inline";
+};
 
 
-
-
+// test function for generatePassword
+const test = "1";
+const test1 = "2";
+function generatePassword() {
+  return test + test1
+}; 
 
 // Write password to the #password input
 function writePassword() {
@@ -18,13 +38,6 @@ function writePassword() {
 
 // Criteria functions
 
-
-
-// Random Generation for the Potential Parameters
-const minLetter = 1;
-const maxLetter = 27;
-const numbersList = "0123456789";
-const symbolsList = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
 
 // Uppercase generation
 // Uppercase Character codes from 65 - 90
@@ -53,7 +66,10 @@ function genSpecial() {
 
 
 // Add event listener to generate button
+// Creates parameters menu, generates and writes password after selection and second press
 generateBtn.addEventListener("click", function() {
-  checkboxForm.style.display = "inline";
+  parametersMenu();
+  generatePassword();
+  writePassword();
 });
-generateBtn.addEventListener("click", writePassword);
+// generateBtn.addEventListener("click", writePassword);
