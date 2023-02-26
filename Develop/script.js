@@ -91,7 +91,7 @@ generateBtn.addEventListener("click", function() {
 });
 
 function generatePass(a, b, c, d) {
-  return a + b + c + d;
+  return [a, b, c, d].filter(Boolean);
 }
 
 
