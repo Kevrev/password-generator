@@ -9,6 +9,11 @@ const symbolsEl = document.querySelector("#symbols");
 const generateEl = document.querySelector("#generate");
 const lengthEl = document.querySelector("#passlength");
 
+// Validation check
+
+  
+// const parametersArray = [upperTrue, lowerTrue, numbersTrue, symbolsTrue]
+
 // Random Generation for the Potential Parameters
 const minLetter = 1;
 const maxLetter = 27;
@@ -21,9 +26,9 @@ function parametersMenu() {
 };
 
 // test function for generatePassword
-function generatePassword() {
-  return test + test1
-}; 
+// function generatePassword() {
+//   const parametersArray = [upperTrue, lowerTrue, numbersTrue, symbolsTrue]
+// }; 
 
 // Write password to the #password input
 function writePassword() {
@@ -35,21 +40,6 @@ function writePassword() {
 }
 
 // Criteria functions
-// Validation check
-function validCheck() {
-  const lengthAmt = parseInt(lengthEl.value);
-  const upperTrue = uppercaseEl.checked;
-  const lowerTrue = lowercaseEl.checked;
-  const numbersTrue = numbersEl.checked;
-  const symbolsTrue = symbolsEl.checked;
-
-  console.log(lengthAmt);
-  console.log(upperTrue);
-  console.log(lowerTrue);
-  console.log(numbersTrue);
-  console.log(symbolsTrue);
-};
-
 
 // Uppercase generation
 // Uppercase Character codes from 65 - 90
@@ -80,6 +70,12 @@ function genSpecial() {
 // Add event listener to generate button
 // Creates parameters menu, generates and writes password after selection and second press
 generateBtn.addEventListener("click", function() {
+  const lengthAmt = parseInt(lengthEl.value);
+  const upperTrue = uppercaseEl.checked;
+  const lowerTrue = lowercaseEl.checked;
+  const numbersTrue = numbersEl.checked;
+  const symbolsTrue = symbolsEl.checked;
+
   parametersMenu();
   generatePassword();
   writePassword();
