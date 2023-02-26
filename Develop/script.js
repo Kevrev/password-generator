@@ -53,7 +53,19 @@ generateBtn.addEventListener("click", function() {
   const numbersTrue = numbersEl.checked;
   const symbolsTrue = symbolsEl.checked;
   const paraArr = [upperTrue, lowerTrue, numbersTrue, symbolsTrue];
-  const generatedPass = generatePass(paraArr, passLength); 
+  let generatedPass = generatePass(paraArr, passLength); 
+  
+  function scramblePassword(password) {
+    const passArr = password.split('');
+    for (let i = passArr.length - 1; i > 0; i--) {
+      const u = Math.floor(Math.random() * (i + 1));
+      [passArr[i], passArr[u]] = [passArr[u], passArr[i]];
+    }
+    return passArr.join('');
+  }
+
+  generatedPass = scramblePassword(generatedPass);
+
   function writePass() { 
     var password = generatedPass.slice(0, passLength);
     var passwordText = document.querySelector("#password");
