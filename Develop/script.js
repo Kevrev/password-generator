@@ -7,6 +7,7 @@ const uppercaseEl = document.querySelector("#uppercase");
 const numbersEl = document.querySelector("#numbers");
 const symbolsEl = document.querySelector("#symbols");
 const generateEl = document.querySelector("#generate");
+const lengthEl = document.querySelector("#passlength");
 
 // Random Generation for the Potential Parameters
 const minLetter = 1;
@@ -19,10 +20,7 @@ function parametersMenu() {
   checkboxForm.style.display = "inline";
 };
 
-
 // test function for generatePassword
-const test = "1";
-const test1 = "2";
 function generatePassword() {
   return test + test1
 }; 
@@ -37,6 +35,20 @@ function writePassword() {
 }
 
 // Criteria functions
+// Validation check
+function validCheck() {
+  const lengthAmt = parseInt(lengthEl.value);
+  const upperTrue = uppercaseEl.checked;
+  const lowerTrue = lowercaseEl.checked;
+  const numbersTrue = numbersEl.checked;
+  const symbolsTrue = symbolsEl.checked;
+
+  console.log(lengthAmt);
+  console.log(upperTrue);
+  console.log(lowerTrue);
+  console.log(numbersTrue);
+  console.log(symbolsTrue);
+};
 
 
 // Uppercase generation
