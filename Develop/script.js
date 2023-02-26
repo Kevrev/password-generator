@@ -7,7 +7,8 @@ const uppercaseEl = document.querySelector("#uppercase");
 const numbersEl = document.querySelector("#numbers");
 const symbolsEl = document.querySelector("#symbols");
 const generateEl = document.querySelector("#generate");
-// const passLength = lengthEl.value;
+const lengthEl = document.querySelector("#passlength")
+
 
 // Random Generation for the Potential Parameters
 const minLetter = 1;
@@ -46,7 +47,7 @@ function genSpecial() {
 
 generateBtn.addEventListener("click", function() {
   parametersMenu();
-  const passLength = parseInt(document.querySelector("#passlength").value);
+  const passLength = lengthEl.value;
   const upperTrue = uppercaseEl.checked;
   const lowerTrue = lowercaseEl.checked;
   const numbersTrue = numbersEl.checked;
@@ -84,3 +85,6 @@ function generatePass(paraArr, passLength) {
   }
   return generatedPass;
 }
+
+
+
