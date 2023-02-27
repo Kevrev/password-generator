@@ -95,6 +95,7 @@ function generatePass(paraArr, passLength) {
       }
     }
   }
+  
   return generatedPass;
 }
 

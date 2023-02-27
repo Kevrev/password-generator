@@ -2,15 +2,13 @@
 
 ## Description
 
-This project was created to showcase knowledge of HTML and CSS by creating a portfolio website that incorporates certain functions. Some of these include navigation links, pseudo classes and their respective functionality, links to different kinds of contact information (phone number, email, GitHub profile), and a page layout that is responsive. This project also serves as an actual portfolio and can be used to display various projects completed in the UC Berkley Part-time Coding Bootcamp. Not only that, but it can be easily expanded upon to implement additional features and content as time goes on.
-
-of a theoretical website for the purposes of improving accessbility and SEO as well as following the DRY principle. Several HTML elements were changed to semantic HTML elements, alternate text was added for images, and classes were consolidated where applicable. Similarly, the CSS also reflects these changes, with several selectors being consolidated as they performed similar functions. The majority of these changes can be found as comments in the HTML and CSS itself. 
+This project was created to showcase knowledge 
 
 ![Screenshot](/assets/images/screenshot.jpg)
 
 ## Usage
 
-One can use the 'inpsect' function of their browser to examine the deployed webpage and see the HTML/CSS: 
+One can use the 'inpsect' function of theirbrowser to examine the deployed webpage and see the HTML/CSS: 
 
 https://kevrev.github.io/professional_portfolio/
 
