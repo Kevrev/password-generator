@@ -10,6 +10,8 @@ This project was created to showcase knowledge of JavaScript by creating a passw
 
 The initial generate function drops the options menu which allows the user to select their desired parameters for their generated password. Clicking generate after this intial step will generate a password. Clicking generate again will generate a new one.
 
+![Screenshot](./assets/kevrev.github.io_password-generator_.png)
+
 Note: At least one option must be selected for generation to occur.
 
 Note 2: Due to the nature of the password generation (generating larger than desired size, shuffling it, then slicing it), there is a rare chance that one of the desired parameters will not appear in a password. This can be remidied by modifying the password manually, generating a new one, or increasing the desired length. Again, this is fairly rare.
