@@ -26,6 +26,6 @@ https://github.com/Kevrev/password-generator
 
 ## Credits
 
-FlorinPop17 for their password generator [walkthrough](https://codepen.io/FlorinPop17/pen/BaBePej). While the code was not used, it provided a good reference point for how exactly a password generator could work. It was a good foundation to refer back to when stuck.
+FlorinPop17 for their password generator [walkthrough](https://codepen.io/FlorinPop17/pen/BaBePej). It provided a good reference point for how exactly a password generator could work and was a good foundation to refer back to when stuck. My random generation function for grabbing characters from a string ultimately ended up being the same.
 
 Tutorials Point for their [Fisher-Yates shuffle tutorial](https://www.tutorialspoint.com/what-is-fisher-yates-shuffle-in-javascript). Their explanation of the concept and tutorial were instrumental for implementing the password scramble into the password generator.
