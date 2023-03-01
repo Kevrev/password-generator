@@ -4,8 +4,6 @@
 
 This project was created to showcase knowledge of JavaScript by creating a password generator that generates a random password based on user-chosen parameters including: lengths from 8 - 128, uppercase letters, lowercase letters, numbers, and special characters.
 
-![Screenshot](/assets/images/screenshot.jpg)
-
 ## Usage
 
 The initial generate function drops the options menu which allows the user to select their desired parameters for their generated password. Clicking generate after this intial step will generate a password. Clicking generate again will generate a new one.
